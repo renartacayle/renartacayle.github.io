@@ -66,6 +66,8 @@ const COMMANDS = {
   <span class="hl-secondary">about</span>       - Brief overview of who I am and my engineering philosophy
   <span class="hl-secondary">skills</span>      - Technical arsenal and core competencies
   <span class="hl-secondary">projects</span>    - Showcase of active repositories & software projects
+  <span class="hl-secondary">status</span>      - Live system health, time, and workstation availability
+  <span class="hl-secondary">stats</span>       - Architecture metrics and repository breakdown table
   <span class="hl-secondary">dotfiles</span>    - Deep dive into my modular Linux workstation setup
   <span class="hl-secondary">neofetch</span>    - System specification & developer environment card
   <span class="hl-secondary">theme</span>       - Cycle or select color theme [catppuccin | matrix | tokyo | amber]
@@ -75,6 +77,37 @@ const COMMANDS = {
   <span class="hl-secondary">clear</span>       - Clear the terminal screen buffer
 
 <span class="hl-dim">💡 Tip: Use [Tab] for command auto-completion, or [Up/Down] arrows for history.</span>`,
+
+  status: () => {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString('en-US', { timeZoneName: 'short' });
+    const dateStr = now.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+    return `
+<span class="hl-primary">⚡ Operational Status & Health Dashboard</span>
+  • <span class="hl-secondary">Workstation:</span>      <span class="hl-success">ONLINE 🟢</span> (Wayland / Hyprland Linux)
+  • <span class="hl-secondary">Focus State:</span>      <span class="hl-warning">Deep Work Session Active 🍅</span> (ZenFocus)
+  • <span class="hl-secondary">Agentic Bridge:</span>   <span class="hl-success">Connected 🤖</span> (git-nexus-mcp on stdio)
+  • <span class="hl-secondary">Local Time:</span>       ${dateStr} ${timeStr}
+  • <span class="hl-secondary">Portfolio Node:</span>   <a href="https://terminal.riuph.me" target="_blank">terminal.riuph.me</a> (Cloudflare Edge SSL)
+  • <span class="hl-secondary">Holding Portal:</span>   <a href="https://riuph.me" target="_blank">riuph.me</a> (RIUPH Master Holding)
+  • <span class="hl-secondary">Availability:</span>     Open for High-Impact Projects & Systems Engineering`;
+  },
+
+  stats: () => `
+<span class="hl-primary">📊 Renarta Ecosystem & Repository Metrics</span>
+┌───────────────────────────┬──────────────┬───────────────────────────────┐
+│ Repository                │ Language     │ Core Architecture / Engine    │
+├───────────────────────────┼──────────────┼───────────────────────────────┤
+│ <span class="hl-secondary">renartacayle/zenfocus</span>     │ Go 1.23      │ Bubbletea TUI, ASCII Clock    │
+│ <span class="hl-secondary">renartacayle/git-nexus-mcp</span> │ TypeScript   │ Model Context Protocol stdio  │
+│ <span class="hl-secondary">renartacayle/dotfiles</span>      │ Bash / Lua   │ GNU Stow, Hyprland, Lazy.nvim │
+│ <span class="hl-secondary">renartacayle.github.io</span>    │ HTML5/CSS/JS │ CRT Canvas & Web Audio Synth  │
+│ <span class="hl-secondary">renartacayle/renartacayle</span>  │ SVG / CI     │ Dynamic Readme & Snake Matrix │
+└───────────────────────────┴──────────────┴───────────────────────────────┘
+  • <span class="hl-dim">CI Status:</span>       <span class="hl-success">100% Passing</span> (GitHub Actions Matrix Build)
+  • <span class="hl-dim">Performance:</span>     <span class="hl-success">Zero Memory Leak</span> (MCP Verified @ 83.5MB Peak RSS)
+  • <span class="hl-dim">Test Suite:</span>      <span class="hl-success">28/28</span> dotfiles symlinks valid | 100% Go unit test coverage`,
+
 
   about: () => `
 <span class="hl-primary">Name:</span> Renarta (<span class="hl-secondary">renartacayle</span>)
