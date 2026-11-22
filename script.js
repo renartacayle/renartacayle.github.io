@@ -108,22 +108,33 @@ I believe in declarative setups, reproducible environments, and software that re
   projects: () => `
 <span class="hl-primary">Featured Open-Source Repositories:</span>
 
-1. <span class="hl-secondary">renartacayle/dotfiles</span>
+1. <span class="hl-secondary">renartacayle/zenfocus</span>
+   <span class="hl-dim">Minimalist aesthetic Pomodoro & deep work TUI in Go + Bubbletea.</span>
+   • Features: Large ASCII digital clock, Catppuccin theme, notify-send desktop alerts.
+   • URL: <a href="https://github.com/renartacayle/zenfocus" target="_blank">https://github.com/renartacayle/zenfocus</a>
+
+2. <span class="hl-secondary">renartacayle/dotfiles</span>
    <span class="hl-dim">Idempotent, modular workstation configuration with GNU Stow.</span>
    • Features: Modular Neovim LSP suite, Tmux, Zsh, Hyprland, Docker test harness.
    • URL: <a href="https://github.com/renartacayle/dotfiles" target="_blank">https://github.com/renartacayle/dotfiles</a>
-
-2. <span class="hl-secondary">renartacayle/renartacayle</span>
-   <span class="hl-dim">Special dynamic GitHub profile repository.</span>
-   • Features: Real-time contribution snake CI, automated stats cards, and retro Neofetch cards.
-   • URL: <a href="https://github.com/renartacayle" target="_blank">https://github.com/renartacayle</a>
 
 3. <span class="hl-secondary">renartacayle.github.io</span>
    <span class="hl-dim">This interactive CRT terminal web portfolio.</span>
    • Features: Web Audio API keyboard synthesis, scanline shaders, dynamic themes.
    • URL: <a href="https://github.com/renartacayle/renartacayle.github.io" target="_blank">https://github.com/renartacayle/renartacayle.github.io</a>
 
-<span class="hl-dim">Type 'dotfiles' for a detailed architectural breakdown of the setup.</span>`,
+<span class="hl-dim">Type 'zenfocus' or 'dotfiles' for deep-dive details.</span>`,
+
+  zenfocus: () => `
+<span class="hl-primary">Project Deep-Dive: renartacayle/zenfocus</span>
+
+<span class="hl-dim">A lightweight, keyboard-driven Pomodoro timer for terminal enthusiasts:</span>
+• <span class="hl-secondary">Zero Electron Bloat:</span> Single ~4MB native compiled Go binary.
+• <span class="hl-secondary">Aesthetic Lip Gloss TUI:</span> Big 3-line ASCII clock & Catppuccin Mocha theme.
+• <span class="hl-secondary">Automated State Machine:</span> Focus (25m), Short Break (5m), Long Break (15m).
+• <span class="hl-secondary">Desktop Notifications:</span> Native notify-send integration for break transitions.
+
+Source & Installation: <a href="https://github.com/renartacayle/zenfocus" target="_blank">https://github.com/renartacayle/zenfocus</a>`,
 
   dotfiles: () => `
 <span class="hl-primary">Project Deep-Dive: renartacayle/dotfiles</span>
