@@ -108,22 +108,37 @@ I believe in declarative setups, reproducible environments, and software that re
   projects: () => `
 <span class="hl-primary">Featured Open-Source Repositories:</span>
 
-1. <span class="hl-secondary">renartacayle/zenfocus</span>
+1. <span class="hl-secondary">renartacayle/git-nexus-mcp</span>
+   <span class="hl-dim">Model Context Protocol (MCP) server for AI coding agents.</span>
+   • Features: Token-optimized diffs, commit analysis, and branch hygiene diagnostics.
+   • URL: <a href="https://github.com/renartacayle/git-nexus-mcp" target="_blank">https://github.com/renartacayle/git-nexus-mcp</a>
+
+2. <span class="hl-secondary">renartacayle/zenfocus</span>
    <span class="hl-dim">Minimalist aesthetic Pomodoro & deep work TUI in Go + Bubbletea.</span>
    • Features: Large ASCII digital clock, Catppuccin theme, notify-send desktop alerts.
    • URL: <a href="https://github.com/renartacayle/zenfocus" target="_blank">https://github.com/renartacayle/zenfocus</a>
 
-2. <span class="hl-secondary">renartacayle/dotfiles</span>
+3. <span class="hl-secondary">renartacayle/dotfiles</span>
    <span class="hl-dim">Idempotent, modular workstation configuration with GNU Stow.</span>
    • Features: Modular Neovim LSP suite, Tmux, Zsh, Hyprland, Docker test harness.
    • URL: <a href="https://github.com/renartacayle/dotfiles" target="_blank">https://github.com/renartacayle/dotfiles</a>
 
-3. <span class="hl-secondary">renartacayle.github.io</span>
+4. <span class="hl-secondary">renartacayle.github.io</span>
    <span class="hl-dim">This interactive CRT terminal web portfolio.</span>
    • Features: Web Audio API keyboard synthesis, scanline shaders, dynamic themes.
    • URL: <a href="https://github.com/renartacayle/renartacayle.github.io" target="_blank">https://github.com/renartacayle/renartacayle.github.io</a>
 
-<span class="hl-dim">Type 'zenfocus' or 'dotfiles' for deep-dive details.</span>`,
+<span class="hl-dim">Type 'mcp', 'zenfocus', or 'dotfiles' for deep-dive details.</span>`,
+
+  mcp: () => `
+<span class="hl-primary">Project Deep-Dive: renartacayle/git-nexus-mcp</span>
+
+<span class="hl-dim">An intelligent Git & Workspace Model Context Protocol (MCP) Server:</span>
+• <span class="hl-secondary">Token-Optimized Diffs:</span> Strips lockfiles (package-lock, Cargo.lock, go.sum) to protect LLM context windows.
+• <span class="hl-secondary">Universal Compatibility:</span> Seamlessly plugs into Claude Desktop, Cursor, Antigravity, and Gemini.
+• <span class="hl-secondary">Architecture Audit:</span> Automatically detects workspace languages, manifests, and git health.
+
+Source & Documentation: <a href="https://github.com/renartacayle/git-nexus-mcp" target="_blank">https://github.com/renartacayle/git-nexus-mcp</a>`,
 
   zenfocus: () => `
 <span class="hl-primary">Project Deep-Dive: renartacayle/zenfocus</span>
