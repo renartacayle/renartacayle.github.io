@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renarta — Interactive Terminal Portfolio</title>
+  <meta name="description" content="Personal terminal web portfolio of Renarta (renartacayle). Built with retro CRT effects, mechanical keyboard audio, and modular command shell.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-catppuccin crt-active sound-active">
+  <!-- CRT Scanline & Vignette Overlay -->
+  <div class="crt-overlay"></div>
+  <div class="scanlines"></div>
+
+  <!-- Terminal Window Container -->
+  <main class="terminal-window">
+    <!-- Window Titlebar -->
+    <header class="terminal-titlebar">
+      <div class="window-controls">
+        <span class="control-btn close"></span>
+        <span class="control-btn minimize"></span>
+        <span class="control-btn maximize"></span>
+      </div>
+      <div class="terminal-title">
+        <span class="icon">💻</span> renarta@workstation:~ (zsh)
+      </div>
+      <div class="terminal-actions">
+        <button id="toggle-sound" class="action-btn" title="Toggle Mechanical Keyboard Audio">
+          <span class="sound-icon">🔊</span> <span class="sound-text">Sound: ON</span>
+        </button>
+        <button id="toggle-crt" class="action-btn" title="Toggle CRT Scanline Effect">
+          <span class="crt-icon">📺</span> <span class="crt-text">CRT: ON</span>
+        </button>
+        <button id="theme-btn" class="action-btn" title="Cycle Color Themes">
+          <span class="theme-icon">🎨</span> <span id="current-theme-label">Catppuccin</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Terminal Screen Body -->
+    <section class="terminal-body" id="terminal-screen" onclick="focusInput()">
+      <!-- Output Container for Rendered History -->
+      <div id="output-container"></div>
+
+      <!-- Live Input Line -->
+      <div class="input-line">
+        <span class="prompt">
+          <span class="user">renarta</span><span class="at">@</span><span class="host">github</span>:<span class="path">~</span><span class="symbol">$</span>
+        </span>
+        <div class="input-wrapper">
+          <input type="text" id="cli-input" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Terminal Command Input">
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Command Bar (Quick-Taps) -->
+    <footer class="quick-commands">
+      <span class="quick-label">⚡ Shortcuts:</span>
+      <button class="pill-btn" onclick="execCmd('help')">help</button>
+      <button class="pill-btn" onclick="execCmd('about')">about</button>
+      <button class="pill-btn" onclick="execCmd('skills')">skills</button>
+      <button class="pill-btn" onclick="execCmd('projects')">projects</button>
+      <button class="pill-btn" onclick="execCmd('neofetch')">neofetch</button>
+      <button class="pill-btn" onclick="execCmd('contact')">contact</button>
+      <button class="pill-btn" onclick="execCmd('clear')">clear</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
