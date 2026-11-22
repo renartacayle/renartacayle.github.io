@@ -66,6 +66,7 @@ const COMMANDS = {
   <span class="hl-secondary">about</span>       - Brief overview of who I am and my engineering philosophy
   <span class="hl-secondary">skills</span>      - Technical arsenal and core competencies
   <span class="hl-secondary">projects</span>    - Showcase of active repositories & software projects
+  <span class="hl-secondary">sentinel</span>    - DevSecOps & secret hunter MCP server for AI agents
   <span class="hl-secondary">status</span>      - Live system health, time, and workstation availability
   <span class="hl-secondary">stats</span>       - Architecture metrics and repository breakdown table
   <span class="hl-secondary">dotfiles</span>    - Deep dive into my modular Linux workstation setup
@@ -98,6 +99,7 @@ const COMMANDS = {
 ┌───────────────────────────┬──────────────┬───────────────────────────────┐
 │ Repository                │ Language     │ Core Architecture / Engine    │
 ├───────────────────────────┼──────────────┼───────────────────────────────┤
+│ <span class="hl-secondary">renartacayle/sentinel-mcp</span> │ TypeScript   │ DevSecOps, Shannon Entropy    │
 │ <span class="hl-secondary">renartacayle/zenfocus</span>     │ Go 1.23      │ Bubbletea TUI, ASCII Clock    │
 │ <span class="hl-secondary">renartacayle/git-nexus-mcp</span> │ TypeScript   │ Model Context Protocol stdio  │
 │ <span class="hl-secondary">renartacayle/dotfiles</span>      │ Bash / Lua   │ GNU Stow, Hyprland, Lazy.nvim │
@@ -105,8 +107,8 @@ const COMMANDS = {
 │ <span class="hl-secondary">renartacayle/renartacayle</span>  │ SVG / CI     │ Dynamic Readme & Snake Matrix │
 └───────────────────────────┴──────────────┴───────────────────────────────┘
   • <span class="hl-dim">CI Status:</span>       <span class="hl-success">100% Passing</span> (GitHub Actions Matrix Build)
-  • <span class="hl-dim">Performance:</span>     <span class="hl-success">Zero Memory Leak</span> (MCP Verified @ 83.5MB Peak RSS)
-  • <span class="hl-dim">Test Suite:</span>      <span class="hl-success">28/28</span> dotfiles symlinks valid | 100% Go unit test coverage`,
+  • <span class="hl-dim">Performance:</span>     <span class="hl-success">Zero Memory Leak</span> (MCP Verified @ 78MB RSS, Sub-ms Scans)
+  • <span class="hl-dim">Test Suite:</span>      <span class="hl-success">28/28</span> dotfiles valid | 100% Go & TypeScript coverage`,
 
 
   about: () => `
@@ -161,7 +163,12 @@ I believe in declarative setups, reproducible environments, and software that re
    • Features: Web Audio API keyboard synthesis, scanline shaders, dynamic themes.
    • URL: <a href="https://github.com/renartacayle/renartacayle.github.io" target="_blank">https://github.com/renartacayle/renartacayle.github.io</a>
 
-<span class="hl-dim">Type 'mcp', 'zenfocus', or 'dotfiles' for deep-dive details.</span>`,
+5. <span class="hl-secondary">renartacayle/sentinel-mcp</span>
+   <span class="hl-dim">DevSecOps & secret hunter MCP server for AI coding assistants.</span>
+   • Features: Shannon entropy secret detection, dependency audits, CIS Docker hardening.
+   • URL: <a href="https://github.com/renartacayle/sentinel-mcp" target="_blank">https://github.com/renartacayle/sentinel-mcp</a>
+
+<span class="hl-dim">Type 'mcp', 'sentinel', 'zenfocus', or 'dotfiles' for deep-dive details.</span>`,
 
   mcp: () => `
 <span class="hl-primary">Project Deep-Dive: renartacayle/git-nexus-mcp</span>
@@ -172,6 +179,17 @@ I believe in declarative setups, reproducible environments, and software that re
 • <span class="hl-secondary">Architecture Audit:</span> Automatically detects workspace languages, manifests, and git health.
 
 Source & Documentation: <a href="https://github.com/renartacayle/git-nexus-mcp" target="_blank">https://github.com/renartacayle/git-nexus-mcp</a>`,
+
+  sentinel: () => `
+<span class="hl-primary">Project Deep-Dive: renartacayle/sentinel-mcp</span>
+
+<span class="hl-dim">Autonomous DevSecOps & Security Intelligence MCP Server:</span>
+• <span class="hl-secondary">Shannon Entropy & Secrets:</span> Catches 25+ secret classes (OpenAI, Anthropic, Gemini, AWS, SSH keys, DB URIs).
+• <span class="hl-secondary">Supply-Chain Auditor:</span> Detects compromised / sabotaged packages and unpinned dependencies.
+• <span class="hl-secondary">CIS Docker Benchmark:</span> Hardens Dockerfiles against root privilege escalation and sensitive copies.
+• <span class="hl-secondary">Pre-Commit Guard:</span> Evaluates git staged diffs, returning PASS or BLOCKED security verdict.
+
+Source & Documentation: <a href="https://github.com/renartacayle/sentinel-mcp" target="_blank">https://github.com/renartacayle/sentinel-mcp</a>`,
 
   zenfocus: () => `
 <span class="hl-primary">Project Deep-Dive: renartacayle/zenfocus</span>
