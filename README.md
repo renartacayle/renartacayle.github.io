@@ -1,12 +1,12 @@
 # 💻 Renarta's Interactive CRT Terminal Portfolio
 
 [![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-222222?logo=githubpages&logoColor=white)](https://renartacayle.github.io)
-![Custom Domain](https://img.shields.io/badge/Custom_Domain-riuph.me-89B4FA?logo=cloudflare&logoColor=white)
+![Custom Domain](https://img.shields.io/badge/Custom_Domain-terminal.riuph.me-89B4FA?logo=cloudflare&logoColor=white)
 ![Vanilla HTML5/CSS3/ES6](https://img.shields.io/badge/Stack-Vanilla_Web_Audio_API-E34F26?logo=html5&logoColor=white)
 ![Theme: Catppuccin Mocha](https://img.shields.io/badge/Theme-Catppuccin%20Mocha-CBA6F7)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-An interactive, responsive, and retro-themed CRT command-line portfolio website for **Renarta** (`renartacayle`), deployed live at **[https://riuph.me](https://riuph.me)** (and **[https://renartacayle.github.io](https://renartacayle.github.io)**).
+An interactive, responsive, and retro-themed CRT command-line portfolio website for **Renarta** (`renartacayle`), deployed live at **[https://terminal.riuph.me](https://terminal.riuph.me)** (and **[https://renartacayle.github.io](https://renartacayle.github.io)**).
 
 ---
 
