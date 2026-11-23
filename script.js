@@ -66,6 +66,7 @@ const COMMANDS = {
   <span class="hl-secondary">about</span>       - Brief overview of who I am and my engineering philosophy
   <span class="hl-secondary">skills</span>      - Technical arsenal and core competencies
   <span class="hl-secondary">projects</span>    - Showcase of active repositories & software projects
+  <span class="hl-secondary">aegis</span>       - Automated API security & OWASP audit CLI / TUI in Go 1.23
   <span class="hl-secondary">vanguard</span>    - Cyberpunk Linux process, network socket & telemetry TUI (Go 1.23)
   <span class="hl-secondary">sentinel</span>    - DevSecOps & secret hunter MCP server for AI agents
   <span class="hl-secondary">status</span>      - Live system health, time, and workstation availability
@@ -174,7 +175,24 @@ I believe in declarative setups, reproducible environments, and software that re
    • Features: Zero external dependencies, /proc parser, dynamic CPU/RAM gauges, socket inode mapping.
    • URL: <a href="https://github.com/renartacayle/vanguard-tui" target="_blank">https://github.com/renartacayle/vanguard-tui</a>
 
-<span class="hl-dim">Type 'vanguard', 'sentinel', 'mcp', 'zenfocus', or 'dotfiles' for deep-dive details.</span>`,
+7. <span class="hl-secondary">renartacayle/aegis-cli</span>
+   <span class="hl-dim">Automated API Security & OWASP Hardening Auditor in Go 1.23 + Bubbletea.</span>
+   • Features: OWASP headers, critical CORS checks, exposed .git/.env leaks, JWT 'none' alg, weak secret audit.
+   • URL: <a href="https://github.com/renartacayle/aegis-cli" target="_blank">https://github.com/renartacayle/aegis-cli</a>
+
+<span class="hl-dim">Type 'aegis', 'vanguard', 'sentinel', 'mcp', 'zenfocus', or 'dotfiles' for deep-dive details.</span>`,
+
+  aegis: () => `
+<span class="hl-primary">Project Deep-Dive: renartacayle/aegis-cli</span>
+
+<span class="hl-dim">Automated API Security & OWASP Hardening Auditor in Go 1.23:</span>
+• <span class="hl-secondary">Zero External Dependencies:</span> Native HTTP probe engine in ~6.2MB stripped binary.
+• <span class="hl-secondary">OWASP Headers & CORS:</span> Audits CSP, HSTS, XFO, XCTO, and flags dangerous wildcard credentials.
+• <span class="hl-secondary">Sensitive File Prober:</span> Discovers exposed .git/HEAD, .env leaks, Spring Boot Actuator, and pprof.
+• <span class="hl-secondary">JWT Cryptanalysis:</span> Detects 'none' algorithm bypass, missing exp, and brute-forces weak HMAC secrets.
+• <span class="hl-secondary">Interactive TUI & Markdown:</span> Cyberpunk Bubbletea HUD and automated executive audit reports.
+
+Source & Installation: <a href="https://github.com/renartacayle/aegis-cli" target="_blank">https://github.com/renartacayle/aegis-cli</a>`,
 
   vanguard: () => `
 <span class="hl-primary">Project Deep-Dive: renartacayle/vanguard-tui</span>
