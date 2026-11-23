@@ -66,6 +66,7 @@ const COMMANDS = {
   <span class="hl-secondary">about</span>       - Brief overview of who I am and my engineering philosophy
   <span class="hl-secondary">skills</span>      - Technical arsenal and core competencies
   <span class="hl-secondary">projects</span>    - Showcase of active repositories & software projects
+  <span class="hl-secondary">vanguard</span>    - Cyberpunk Linux process, network socket & telemetry TUI (Go 1.23)
   <span class="hl-secondary">sentinel</span>    - DevSecOps & secret hunter MCP server for AI agents
   <span class="hl-secondary">status</span>      - Live system health, time, and workstation availability
   <span class="hl-secondary">stats</span>       - Architecture metrics and repository breakdown table
@@ -168,7 +169,23 @@ I believe in declarative setups, reproducible environments, and software that re
    • Features: Shannon entropy secret detection, dependency audits, CIS Docker hardening.
    • URL: <a href="https://github.com/renartacayle/sentinel-mcp" target="_blank">https://github.com/renartacayle/sentinel-mcp</a>
 
-<span class="hl-dim">Type 'mcp', 'sentinel', 'zenfocus', or 'dotfiles' for deep-dive details.</span>`,
+6. <span class="hl-secondary">renartacayle/vanguard-tui</span>
+   <span class="hl-dim">Cyberpunk Linux Process, Sockets & Telemetry Monitor in Go 1.23 + Bubbletea.</span>
+   • Features: Zero external dependencies, /proc parser, dynamic CPU/RAM gauges, socket inode mapping.
+   • URL: <a href="https://github.com/renartacayle/vanguard-tui" target="_blank">https://github.com/renartacayle/vanguard-tui</a>
+
+<span class="hl-dim">Type 'vanguard', 'sentinel', 'mcp', 'zenfocus', or 'dotfiles' for deep-dive details.</span>`,
+
+  vanguard: () => `
+<span class="hl-primary">Project Deep-Dive: renartacayle/vanguard-tui</span>
+
+<span class="hl-dim">Cyberpunk Linux Process, Sockets & Hardware Telemetry Monitor in Go 1.23:</span>
+• <span class="hl-secondary">Zero External Executables:</span> Pure Linux virtual filesystem (/proc) parser in ~2.7MB stripped binary.
+• <span class="hl-secondary">Process Inspector:</span> Per-process CPU% delta tracking, RSS memory, multi-column sort, interactive SIGTERM/SIGKILL.
+• <span class="hl-secondary">Network Telemetry:</span> TCP/UDP v4 & v6 hex socket decoding, socket inode to PID mapping via /proc/[pid]/fd.
+• <span class="hl-secondary">Cyberpunk HUD:</span> Dynamic ASCII gradient gauge bars, system uptime, and multi-tab interface.
+
+Source & Installation: <a href="https://github.com/renartacayle/vanguard-tui" target="_blank">https://github.com/renartacayle/vanguard-tui</a>`,
 
   mcp: () => `
 <span class="hl-primary">Project Deep-Dive: renartacayle/git-nexus-mcp</span>
